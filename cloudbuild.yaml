@@ -343,7 +343,7 @@ steps:
     cd /workspace/
     sed -i "s/<username>/$$KAGGLE_USERNAME/g" ./rag/example_notebooks/rag-kaggle-ray-sql-interactive.ipynb
     sed -i "s/<token>/$$KAGGLE_KEY/g" ./rag/example_notebooks/rag-kaggle-ray-sql-interactive.ipynb
-    gsutil cp ./rag/example_notebooks/rag-kaggle-ray-sql-interactive.ipynb gs://gke-aieco-rag-$SHORT_SHA-$_BUILD_ID/
+    gcloud storage cp ./rag/example_notebooks/rag-kaggle-ray-sql-interactive.ipynb gs://gke-aieco-rag-$SHORT_SHA-$_BUILD_ID/
     kubectl exec -it -n rag-$SHORT_SHA-$_BUILD_ID $(kubectl get pod -l app=jupyterhub,component=hub -n rag-$SHORT_SHA-$_BUILD_ID -o jsonpath="{.items[0].metadata.name}") -- jupyterhub token admin --log-level=CRITICAL | xargs python3 ./rag/notebook_starter.py
     # Wait for jupyterhub to trigger notebook pod startup
     sleep 5s
