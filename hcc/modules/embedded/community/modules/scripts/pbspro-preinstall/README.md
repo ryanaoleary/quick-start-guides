@@ -141,9 +141,9 @@ limitations under the License.
 | Name | Description |
 |------|-------------|
 | <a name="output_bucket_name"></a> [bucket\_name](#output\_bucket\_name) | Bucket for PBS RPM packages |
-| <a name="output_pbs_client_rpm_url"></a> [pbs\_client\_rpm\_url](#output\_pbs\_client\_rpm\_url) | gsutil URL of PBS client RPM package |
-| <a name="output_pbs_devel_rpm_url"></a> [pbs\_devel\_rpm\_url](#output\_pbs\_devel\_rpm\_url) | gsutil URL of PBS development RPM package |
-| <a name="output_pbs_execution_rpm_url"></a> [pbs\_execution\_rpm\_url](#output\_pbs\_execution\_rpm\_url) | gsutil URL of PBS execution host RPM package |
-| <a name="output_pbs_license_file_url"></a> [pbs\_license\_file\_url](#output\_pbs\_license\_file\_url) | gsutil URL of PBS license file |
-| <a name="output_pbs_server_rpm_url"></a> [pbs\_server\_rpm\_url](#output\_pbs\_server\_rpm\_url) | gsutil URL of PBS server host RPM package |
+| <a name="output_pbs_client_rpm_url"></a> [pbs\_client\_rpm\_url](#output\_pbs\_client\_rpm\_url) | gcloud storage URL of PBS client RPM package |
+| <a name="output_pbs_devel_rpm_url"></a> [pbs\_devel\_rpm\_url](#output\_pbs\_devel\_rpm\_url) | gcloud storage URL of PBS development RPM package |
+| <a name="output_pbs_execution_rpm_url"></a> [pbs\_execution\_rpm\_url](#output\_pbs\_execution\_rpm\_url) | gcloud storage URL of PBS execution host RPM package |
+| <a name="output_pbs_license_file_url"></a> [pbs\_license\_file\_url](#output\_pbs\_license\_file\_url) | gcloud storage URL of PBS license file |
+| <a name="output_pbs_server_rpm_url"></a> [pbs\_server\_rpm\_url](#output\_pbs\_server\_rpm\_url) | gcloud storage URL of PBS server host RPM package |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
